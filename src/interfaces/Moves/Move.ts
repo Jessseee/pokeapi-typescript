@@ -1,19 +1,19 @@
-import type { ContestEffect } from "../Contests/ContestEffect";
-import type { ContestType } from "../Contests/ContestType";
-import type { SuperContestEffect } from "../Contests/SuperContestEffect";
-import type { Generation } from "../Games/Generation";
-import type { VersionGroup } from "../Games/VersionGroup";
-import type { AbilityEffectChange } from "../Pokemon/Ability";
-import type { Stat } from "../Pokemon/Stat";
-import type { Type } from "../Pokemon/Type";
-import type { ApiResource } from "../Utility/ApiResourceList";
-import type { MachineVersionDetail, Name, VerboseEffect } from "../Utility/CommonModels";
-import type { Language } from "../Utility/Language";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList";
-import type { MoveAilment } from "./MoveAilment";
-import type { MoveCategory } from "./MoveCategory";
-import type { MoveDamageClass } from "./MoveDamageClass";
-import type { MoveTarget } from "./MoveTarget";
+import type { ContestEffect } from "../Contests/ContestEffect.js";
+import type { ContestType } from "../Contests/ContestType.js";
+import type { SuperContestEffect } from "../Contests/SuperContestEffect.js";
+import type { Generation } from "../Games/Generation.js";
+import type { VersionGroup } from "../Games/VersionGroup.js";
+import type { AbilityEffectChange } from "../Pokemon/Ability.js";
+import type { Stat } from "../Pokemon/Stat.js";
+import type { Type } from "../Pokemon/Type.js";
+import type { ApiResource } from "../Utility/ApiResourceList.js";
+import type { MachineVersionDetail, Name, VerboseEffect } from "../Utility/CommonModels.js";
+import type { Language } from "../Utility/Language.js";
+import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { MoveAilment } from "./MoveAilment.js";
+import type { MoveCategory } from "./MoveCategory.js";
+import type { MoveDamageClass } from "./MoveDamageClass.js";
+import type { MoveTarget } from "./MoveTarget.js";
 
 export type Move = {
 	accuracy: number;

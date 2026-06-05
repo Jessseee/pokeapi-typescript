@@ -1,4 +1,4 @@
-import type { Effect, FlavorText } from "../Utility/CommonModels";
+import type { Effect, FlavorText } from "../Utility/CommonModels.js";
 
 export type ContestEffect = {
 	appeal: number;

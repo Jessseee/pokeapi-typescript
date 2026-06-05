@@ -1,5 +1,5 @@
-import type { NamedApiResource } from "../Utility/NamedApiResourceList";
-import type { PokemonSpecies } from "./PokemonSpecies";
+import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { PokemonSpecies } from "./PokemonSpecies.js";
 
 export type Gender = {
 	id: number;

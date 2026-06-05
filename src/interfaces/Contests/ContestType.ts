@@ -1,6 +1,6 @@
-import type { BerryFlavor } from "../Berries/BerryFlavor";
-import type { Language } from "../Utility/Language";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList";
+import type { BerryFlavor } from "../Berries/BerryFlavor.js";
+import type { Language } from "../Utility/Language.js";
+import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
 
 export type ContestType = {
 	berry_flavor: NamedApiResource<BerryFlavor>;

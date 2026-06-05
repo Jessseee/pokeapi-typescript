@@ -1,9 +1,9 @@
-import type { Generation } from "../Games/Generation";
-import type { Move } from "../Moves/Move";
-import type { MoveDamageClass } from "../Moves/MoveDamageClass";
-import type { GenerationGameIndex, Name } from "../Utility/CommonModels";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList";
-import type { Pokemon } from "./Pokemon";
+import type { Generation } from "../Games/Generation.js";
+import type { Move } from "../Moves/Move.js";
+import type { MoveDamageClass } from "../Moves/MoveDamageClass.js";
+import type { GenerationGameIndex, Name } from "../Utility/CommonModels.js";
+import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { Pokemon } from "./Pokemon.js";
 
 export type Type = {
 	damage_relations: TypeRelations;

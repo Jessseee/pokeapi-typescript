@@ -1,9 +1,9 @@
-import type { Generation } from "../Games/Generation";
-import type { VersionGroup } from "../Games/VersionGroup";
-import type { Effect, Name, VerboseEffect } from "../Utility/CommonModels";
-import type { Language } from "../Utility/Language";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList";
-import type { Pokemon } from "./Pokemon";
+import type { Generation } from "../Games/Generation.js";
+import type { VersionGroup } from "../Games/VersionGroup.js";
+import type { Effect, Name, VerboseEffect } from "../Utility/CommonModels.js";
+import type { Language } from "../Utility/Language.js";
+import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { Pokemon } from "./Pokemon.js";
 
 export type Ability = {
 	effect_changes: AbilityEffectChange[];

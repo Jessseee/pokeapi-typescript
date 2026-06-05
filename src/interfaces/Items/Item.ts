@@ -1,17 +1,17 @@
-import type { EvolutionChain } from "../Evolution/EvolutionChain";
-import type { Version } from "../Games/Version";
-import type { ApiResource } from "../Utility/ApiResourceList";
+import type { EvolutionChain } from "../Evolution/EvolutionChain.js";
+import type { Version } from "../Games/Version.js";
+import type { ApiResource } from "../Utility/ApiResourceList.js";
 import type {
 	GenerationGameIndex,
 	MachineVersionDetail,
 	Name,
 	VerboseEffect,
 	VersionGroupFlavorText,
-} from "../Utility/CommonModels";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList";
-import type { ItemAttribute } from "./ItemAttribute";
-import type { ItemCategory } from "./ItemCategory";
-import type { ItemFlingEffect } from "./ItemFlingEffect";
+} from "../Utility/CommonModels.js";
+import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { ItemAttribute } from "./ItemAttribute.js";
+import type { ItemCategory } from "./ItemCategory.js";
+import type { ItemFlingEffect } from "./ItemFlingEffect.js";
 
 export type Item = {
 	attributes: NamedApiResource<ItemAttribute>[];

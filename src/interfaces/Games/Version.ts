@@ -1,6 +1,6 @@
-import type { Name } from "../Utility/CommonModels";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList";
-import type { VersionGroup } from "./VersionGroup";
+import type { Name } from "../Utility/CommonModels.js";
+import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { VersionGroup } from "./VersionGroup.js";
 
 export type Version = {
 	id: number;

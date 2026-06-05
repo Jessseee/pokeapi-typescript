@@ -1,11 +1,11 @@
-import type { Region } from "../Locations/Region";
-import type { Move } from "../Moves/Move";
-import type { Ability } from "../Pokemon/Ability";
-import type { PokemonSpecies } from "../Pokemon/PokemonSpecies";
-import type { Type } from "../Pokemon/Type";
-import type { Name } from "../Utility/CommonModels";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList";
-import type { VersionGroup } from "./VersionGroup";
+import type { Region } from "../Locations/Region.js";
+import type { Move } from "../Moves/Move.js";
+import type { Ability } from "../Pokemon/Ability.js";
+import type { PokemonSpecies } from "../Pokemon/PokemonSpecies.js";
+import type { Type } from "../Pokemon/Type.js";
+import type { Name } from "../Utility/CommonModels.js";
+import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { VersionGroup } from "./VersionGroup.js";
 
 export type Generation = {
 	abilities: NamedApiResource<Ability>[];

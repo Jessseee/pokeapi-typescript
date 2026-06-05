@@ -1,4 +1,4 @@
-import type { Name } from "../Utility/CommonModels";
+import type { Name } from "../Utility/CommonModels.js";
 
 export type EncounterMethod = {
 	id: number;

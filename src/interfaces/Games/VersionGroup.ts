@@ -1,9 +1,9 @@
-import type { Region } from "../Locations/Region";
-import type { MoveLearnMethod } from "../Moves/MoveLearnMethod";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList";
-import type { Generation } from "./Generation";
-import type { Pokedex } from "./Pokedex";
-import type { Version } from "./Version";
+import type { Region } from "../Locations/Region.js";
+import type { MoveLearnMethod } from "../Moves/MoveLearnMethod.js";
+import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { Generation } from "./Generation.js";
+import type { Pokedex } from "./Pokedex.js";
+import type { Version } from "./Version.js";
 
 export type VersionGroup = {
 	generation: NamedApiResource<Generation>;

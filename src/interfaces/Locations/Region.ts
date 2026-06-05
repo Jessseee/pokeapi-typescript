@@ -1,9 +1,9 @@
-import type { Generation } from "../Games/Generation";
-import type { Pokedex } from "../Games/Pokedex";
-import type { VersionGroup } from "../Games/VersionGroup";
-import type { Name } from "../Utility/CommonModels";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList";
-import type { Location } from "./Location";
+import type { Generation } from "../Games/Generation.js";
+import type { Pokedex } from "../Games/Pokedex.js";
+import type { VersionGroup } from "../Games/VersionGroup.js";
+import type { Name } from "../Utility/CommonModels.js";
+import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { Location } from "./Location.js";
 
 export type Region = {
 	id: number;

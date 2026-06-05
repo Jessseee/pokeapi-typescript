@@ -1,6 +1,6 @@
-import type { Name } from "../Utility/CommonModels";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList";
-import type { EncounterCondition } from "./EncounterCondition";
+import type { Name } from "../Utility/CommonModels.js";
+import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { EncounterCondition } from "./EncounterCondition.js";
 
 export type EncounterConditionValue = {
 	condition: NamedApiResource<EncounterCondition>;

@@ -1,4 +1,4 @@
-import type { Name } from "./CommonModels";
+import type { Name } from "./CommonModels.js";
 
 export type Language = {
 	id: number;

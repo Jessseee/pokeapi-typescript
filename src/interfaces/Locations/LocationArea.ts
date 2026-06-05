@@ -1,9 +1,9 @@
-import type { EncounterMethod } from "../Encounters/EncounterMethod";
-import type { Version } from "../Games/Version";
-import type { Pokemon } from "../Pokemon/Pokemon";
-import type { Name, VersionEncounterDetail } from "../Utility/CommonModels";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList";
-import type { Location } from "./Location";
+import type { EncounterMethod } from "../Encounters/EncounterMethod.js";
+import type { Version } from "../Games/Version.js";
+import type { Pokemon } from "../Pokemon/Pokemon.js";
+import type { Name, VersionEncounterDetail } from "../Utility/CommonModels.js";
+import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { Location } from "./Location.js";
 
 export type LocationArea = {
 	encounter_method_rates: EncounterMethodRate[];

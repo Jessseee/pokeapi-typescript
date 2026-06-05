@@ -1,6 +1,6 @@
-import type { PokemonSpecies } from "../Pokemon/PokemonSpecies";
-import type { Name } from "../Utility/CommonModels";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList";
+import type { PokemonSpecies } from "../Pokemon/PokemonSpecies.js";
+import type { Name } from "../Utility/CommonModels.js";
+import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
 
 export type PalParkArea = {
 	id: number;

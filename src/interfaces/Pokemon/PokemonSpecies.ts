@@ -1,17 +1,17 @@
-import type { EvolutionChain } from "../Evolution/EvolutionChain";
-import type { Generation } from "../Games/Generation";
-import type { Pokedex } from "../Games/Pokedex";
-import type { PalParkArea } from "../Locations/PalParkArea";
-import type { ApiResource } from "../Utility/ApiResourceList";
-import type { Description, FlavorText, Name } from "../Utility/CommonModels";
-import type { Language } from "../Utility/Language";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList";
-import type { EggGroup } from "./EggGroup";
-import type { GrowthRate } from "./GrowthRate";
-import type { Pokemon } from "./Pokemon";
-import type { PokemonColor } from "./PokemonColor";
-import type { PokemonHabitat } from "./PokemonHabitat";
-import type { PokemonShape } from "./PokemonShape";
+import type { EvolutionChain } from "../Evolution/EvolutionChain.js";
+import type { Generation } from "../Games/Generation.js";
+import type { Pokedex } from "../Games/Pokedex.js";
+import type { PalParkArea } from "../Locations/PalParkArea.js";
+import type { ApiResource } from "../Utility/ApiResourceList.js";
+import type { Description, FlavorText, Name } from "../Utility/CommonModels.js";
+import type { Language } from "../Utility/Language.js";
+import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { EggGroup } from "./EggGroup.js";
+import type { GrowthRate } from "./GrowthRate.js";
+import type { Pokemon } from "./Pokemon.js";
+import type { PokemonColor } from "./PokemonColor.js";
+import type { PokemonHabitat } from "./PokemonHabitat.js";
+import type { PokemonShape } from "./PokemonShape.js";
 
 export type PokemonSpecies = {
 	base_happiness: number;

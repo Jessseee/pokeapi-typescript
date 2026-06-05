@@ -1,8 +1,8 @@
-import type { Item } from "../Items/Item";
-import type { Type } from "../Pokemon/Type";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList";
-import type { BerryFirmness } from "./BerryFirmness";
-import type { BerryFlavor } from "./BerryFlavor";
+import type { Item } from "../Items/Item.js";
+import type { Type } from "../Pokemon/Type.js";
+import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { BerryFirmness } from "./BerryFirmness.js";
+import type { BerryFlavor } from "./BerryFlavor.js";
 
 export type Berry = {
 	firmness: NamedApiResource<BerryFirmness>;

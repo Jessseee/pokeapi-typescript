@@ -1,12 +1,12 @@
-import type { EncounterConditionValue } from "../Encounters/EncounterConditionValue";
-import type { EncounterMethod } from "../Encounters/EncounterMethod";
-import type { Generation } from "../Games/Generation";
-import type { Version } from "../Games/Version";
-import type { VersionGroup } from "../Games/VersionGroup";
-import type { Machine } from "../Machines/Machine";
-import type { ApiResource } from "./ApiResourceList";
-import type { Language } from "./Language";
-import type { NamedApiResource } from "./NamedApiResourceList";
+import type { EncounterConditionValue } from "../Encounters/EncounterConditionValue.js";
+import type { EncounterMethod } from "../Encounters/EncounterMethod.js";
+import type { Generation } from "../Games/Generation.js";
+import type { Version } from "../Games/Version.js";
+import type { VersionGroup } from "../Games/VersionGroup.js";
+import type { Machine } from "../Machines/Machine.js";
+import type { ApiResource } from "./ApiResourceList.js";
+import type { Language } from "./Language.js";
+import type { NamedApiResource } from "./NamedApiResourceList.js";
 
 export type CacheableResource = {
 	id: number;

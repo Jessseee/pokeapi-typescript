@@ -1,6 +1,6 @@
-import type { Name } from "../Utility/CommonModels";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList";
-import type { Nature } from "./Nature";
+import type { Name } from "../Utility/CommonModels.js";
+import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { Nature } from "./Nature.js";
 
 export type PokeathlonStat = {
 	affecting_natures: NaturePokeathlonStatAffectSets;

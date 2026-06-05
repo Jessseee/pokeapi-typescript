@@ -1,8 +1,8 @@
-import type { Region } from "../Locations/Region";
-import type { PokemonSpecies } from "../Pokemon/PokemonSpecies";
-import type { Description, Name } from "../Utility/CommonModels";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList";
-import type { VersionGroup } from "./VersionGroup";
+import type { Region } from "../Locations/Region.js";
+import type { PokemonSpecies } from "../Pokemon/PokemonSpecies.js";
+import type { Description, Name } from "../Utility/CommonModels.js";
+import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { VersionGroup } from "./VersionGroup.js";
 
 export type Pokedex = {
 	descriptions: Description[];

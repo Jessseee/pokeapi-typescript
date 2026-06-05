@@ -1,6 +1,6 @@
-import type { Description, Name } from "../Utility/CommonModels";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList";
-import type { Move } from "./Move";
+import type { Description, Name } from "../Utility/CommonModels.js";
+import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { Move } from "./Move.js";
 
 export type MoveTarget = {
 	descriptions: Description[];

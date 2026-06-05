@@ -1,4 +1,4 @@
-import type { Endpoint } from "../../lib/Endpoint";
+import type { Endpoint } from "../../lib/Endpoint.js";
 
 export type Base = { id: number; };
 

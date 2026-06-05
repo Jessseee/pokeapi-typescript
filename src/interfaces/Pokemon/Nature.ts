@@ -1,9 +1,9 @@
-import type { BerryFlavor } from "../Berries/BerryFlavor";
-import type { MoveBattleStyle } from "../Moves/MoveBattleStyle";
-import type { Name } from "../Utility/CommonModels";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList";
-import type { PokeathlonStat } from "./PokeathlonStat";
-import type { Stat } from "./Stat";
+import type { BerryFlavor } from "../Berries/BerryFlavor.js";
+import type { MoveBattleStyle } from "../Moves/MoveBattleStyle.js";
+import type { Name } from "../Utility/CommonModels.js";
+import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { PokeathlonStat } from "./PokeathlonStat.js";
+import type { Stat } from "./Stat.js";
 
 export type Nature = {
 	decreased_stat: NamedApiResource<Stat>;

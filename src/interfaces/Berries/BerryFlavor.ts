@@ -1,7 +1,7 @@
-import type { ContestType } from "../Contests/ContestType";
-import type { Name } from "../Utility/CommonModels";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList";
-import type { Berry } from "./Berry";
+import type { ContestType } from "../Contests/ContestType.js";
+import type { Name } from "../Utility/CommonModels.js";
+import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { Berry } from "./Berry.js";
 
 export type BerryFlavor = {
 	berries: FlavorBerryMap[];

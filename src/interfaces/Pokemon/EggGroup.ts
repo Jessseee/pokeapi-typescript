@@ -1,6 +1,6 @@
-import type { Name } from "../Utility/CommonModels";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList";
-import type { PokemonSpecies } from "./PokemonSpecies";
+import type { Name } from "../Utility/CommonModels.js";
+import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { PokemonSpecies } from "./PokemonSpecies.js";
 
 export type EggGroup = {
 	id: number;

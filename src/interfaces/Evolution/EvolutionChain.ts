@@ -1,10 +1,10 @@
-import type { Item } from "../Items/Item";
-import type { Location } from "../Locations/Location";
-import type { Move } from "../Moves/Move";
-import type { PokemonSpecies } from "../Pokemon/PokemonSpecies";
-import type { Type } from "../Pokemon/Type";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList";
-import type { EvolutionTrigger } from "./EvolutionTrigger";
+import type { Item } from "../Items/Item.js";
+import type { Location } from "../Locations/Location.js";
+import type { Move } from "../Moves/Move.js";
+import type { PokemonSpecies } from "../Pokemon/PokemonSpecies.js";
+import type { Type } from "../Pokemon/Type.js";
+import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { EvolutionTrigger } from "./EvolutionTrigger.js";
 
 export type EvolutionChain = {
 	baby_trigger_item: NamedApiResource<Item>;

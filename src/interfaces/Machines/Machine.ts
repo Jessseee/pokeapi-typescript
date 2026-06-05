@@ -1,7 +1,7 @@
-import type { VersionGroup } from "../Games/VersionGroup";
-import type { Item } from "../Items/Item";
-import type { Move } from "../Moves/Move";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList";
+import type { VersionGroup } from "../Games/VersionGroup.js";
+import type { Item } from "../Items/Item.js";
+import type { Move } from "../Moves/Move.js";
+import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
 
 export type Machine = {
 	id: number;
