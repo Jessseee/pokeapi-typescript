@@ -9,7 +9,7 @@ import type { Type } from "../Pokemon/Type.js";
 import type { ApiResource } from "../Utility/ApiResourceList.js";
 import type { MachineVersionDetail, Name, VerboseEffect } from "../Utility/CommonModels.js";
 import type { Language } from "../Utility/Language.js";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { NamedApiResource } from "../Utility/ApiResourceList.js";
 import type { MoveAilment } from "./MoveAilment.js";
 import type { MoveCategory } from "./MoveCategory.js";
 import type { MoveDamageClass } from "./MoveDamageClass.js";

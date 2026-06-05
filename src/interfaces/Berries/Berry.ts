@@ -1,6 +1,6 @@
 import type { Item } from "../Items/Item.js";
 import type { Type } from "../Pokemon/Type.js";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { NamedApiResource } from "../Utility/ApiResourceList.js";
 import type { BerryFirmness } from "./BerryFirmness.js";
 import type { BerryFlavor } from "./BerryFlavor.js";
 

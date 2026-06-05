@@ -1,7 +1,7 @@
 import type { Region } from "../Locations/Region.js";
 import type { PokemonSpecies } from "../Pokemon/PokemonSpecies.js";
 import type { Description, Name } from "../Utility/CommonModels.js";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { NamedApiResource } from "../Utility/ApiResourceList.js";
 import type { VersionGroup } from "./VersionGroup.js";
 
 export type Pokedex = {

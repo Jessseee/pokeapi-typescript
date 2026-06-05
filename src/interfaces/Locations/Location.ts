@@ -1,5 +1,5 @@
 import type { GenerationGameIndex, Name } from "../Utility/CommonModels.js";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { NamedApiResource } from "../Utility/ApiResourceList.js";
 import type { LocationArea } from "./LocationArea.js";
 import type { Region } from "./Region.js";
 

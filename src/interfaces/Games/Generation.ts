@@ -4,7 +4,7 @@ import type { Ability } from "../Pokemon/Ability.js";
 import type { PokemonSpecies } from "../Pokemon/PokemonSpecies.js";
 import type { Type } from "../Pokemon/Type.js";
 import type { Name } from "../Utility/CommonModels.js";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { NamedApiResource } from "../Utility/ApiResourceList.js";
 import type { VersionGroup } from "./VersionGroup.js";
 
 export type Generation = {

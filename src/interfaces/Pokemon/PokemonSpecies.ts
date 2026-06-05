@@ -5,7 +5,7 @@ import type { PalParkArea } from "../Locations/PalParkArea.js";
 import type { ApiResource } from "../Utility/ApiResourceList.js";
 import type { Description, FlavorText, Name } from "../Utility/CommonModels.js";
 import type { Language } from "../Utility/Language.js";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { NamedApiResource } from "../Utility/ApiResourceList.js";
 import type { EggGroup } from "./EggGroup.js";
 import type { GrowthRate } from "./GrowthRate.js";
 import type { Pokemon } from "./Pokemon.js";

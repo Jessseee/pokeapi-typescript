@@ -1,7 +1,7 @@
 import type { BerryFlavor } from "../Berries/BerryFlavor.js";
 import type { MoveBattleStyle } from "../Moves/MoveBattleStyle.js";
 import type { Name } from "../Utility/CommonModels.js";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { NamedApiResource } from "../Utility/ApiResourceList.js";
 import type { PokeathlonStat } from "./PokeathlonStat.js";
 import type { Stat } from "./Stat.js";
 

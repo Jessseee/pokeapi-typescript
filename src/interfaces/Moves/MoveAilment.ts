@@ -1,5 +1,5 @@
 import type { Name } from "../Utility/CommonModels.js";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { NamedApiResource } from "../Utility/ApiResourceList.js";
 import type { Move } from "./Move.js";
 
 export type MoveAilment = {

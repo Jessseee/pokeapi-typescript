@@ -6,7 +6,7 @@ import type { Location } from "../Locations/Location.js";
 import type { Move } from "../Moves/Move.js";
 import type { MoveLearnMethod } from "../Moves/MoveLearnMethod.js";
 import type { VersionEncounterDetail, VersionGameIndex } from "../Utility/CommonModels.js";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { NamedApiResource } from "../Utility/ApiResourceList.js";
 import type { Ability } from "./Ability.js";
 import type { PokemonForm } from "./PokemonForm.js";
 import type { PokemonSpecies } from "./PokemonSpecies.js";

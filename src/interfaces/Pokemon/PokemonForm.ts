@@ -1,6 +1,6 @@
 import type { VersionGroup } from "../Games/VersionGroup.js";
 import type { Name } from "../Utility/CommonModels.js";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { NamedApiResource } from "../Utility/ApiResourceList.js";
 import type { Pokemon } from "./Pokemon.js";
 
 export type PokemonForm = {

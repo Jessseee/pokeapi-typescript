@@ -1,4 +1,4 @@
-import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { NamedApiResource } from "../Utility/ApiResourceList.js";
 import type { ItemCategory } from "./ItemCategory.js";
 
 export type ItemPocket = {

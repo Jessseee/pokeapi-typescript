@@ -8,7 +8,7 @@ import type {
 	VerboseEffect,
 	VersionGroupFlavorText,
 } from "../Utility/CommonModels.js";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { NamedApiResource } from "../Utility/ApiResourceList.js";
 import type { ItemAttribute } from "./ItemAttribute.js";
 import type { ItemCategory } from "./ItemCategory.js";
 import type { ItemFlingEffect } from "./ItemFlingEffect.js";

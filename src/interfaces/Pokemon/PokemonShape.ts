@@ -1,6 +1,6 @@
 import type { Name } from "../Utility/CommonModels.js";
 import type { Language } from "../Utility/Language.js";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { NamedApiResource } from "../Utility/ApiResourceList.js";
 import type { PokemonSpecies } from "./PokemonSpecies.js";
 
 export type PokemonShape = {

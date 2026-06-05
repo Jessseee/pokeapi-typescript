@@ -1,6 +1,6 @@
 import type { Region } from "../Locations/Region.js";
 import type { MoveLearnMethod } from "../Moves/MoveLearnMethod.js";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { NamedApiResource } from "../Utility/ApiResourceList.js";
 import type { Generation } from "./Generation.js";
 import type { Pokedex } from "./Pokedex.js";
 import type { Version } from "./Version.js";

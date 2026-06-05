@@ -2,7 +2,7 @@ import type { Move } from "../Moves/Move.js";
 import type { MoveDamageClass } from "../Moves/MoveDamageClass.js";
 import type { ApiResource } from "../Utility/ApiResourceList.js";
 import type { Name } from "../Utility/CommonModels.js";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { NamedApiResource } from "../Utility/ApiResourceList.js";
 import type { Characteristic } from "./Characteristic.js";
 import type { Nature } from "./Nature.js";
 

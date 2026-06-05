@@ -2,7 +2,7 @@ import type { EncounterMethod } from "../Encounters/EncounterMethod.js";
 import type { Version } from "../Games/Version.js";
 import type { Pokemon } from "../Pokemon/Pokemon.js";
 import type { Name, VersionEncounterDetail } from "../Utility/CommonModels.js";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { NamedApiResource } from "../Utility/ApiResourceList.js";
 import type { Location } from "./Location.js";
 
 export type LocationArea = {

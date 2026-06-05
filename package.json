@@ -42,6 +42,7 @@
     "typescript-eslint": "^8.60.1"
   },
   "dependencies": {
-    "@discordjs/collection": "^2.1.1"
+    "@discordjs/collection": "^2.1.1",
+    "zod": "^4.4.3"
   }
 }

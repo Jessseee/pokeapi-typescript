@@ -3,7 +3,7 @@ import type { Location } from "../Locations/Location.js";
 import type { Move } from "../Moves/Move.js";
 import type { PokemonSpecies } from "../Pokemon/PokemonSpecies.js";
 import type { Type } from "../Pokemon/Type.js";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { NamedApiResource } from "../Utility/ApiResourceList.js";
 import type { EvolutionTrigger } from "./EvolutionTrigger.js";
 
 export type EvolutionChain = {

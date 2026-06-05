@@ -1,91 +1,50 @@
-import type { NamedBase } from "../interfaces/Utility/ApiResourceList.js";
-import type { NamedApiResourceList } from "../interfaces/Utility/NamedApiResourceList.js";
+import type {
+    NamedApiResourceList,
+    NamedBase,
+} from "../interfaces/index.js";
 import { Endpoint, type EndpointParam } from "./Endpoint.js";
+import { parseNamedBase } from "./validation.js";
 
 export type NamedEndpointParam = EndpointParam | string;
 
-const BASE_URI = "https://pokeapi.co/api/v2";
-
 export class NamedEndpoint<T extends NamedBase> extends Endpoint<T> {
-	declare protected _list?: NamedApiResourceList<T>;
+    declare protected _list?: NamedApiResourceList<T>;
 
-	private readonly _nameMap: Map<string, number>;
+    private readonly nameMap: Map<string, number>;
 
-	public constructor(resource: string) {
-		super(resource);
-		this._nameMap = new Map<string, number>();
-	}
+    public constructor(resource: string) {
+        super(resource);
+        this.nameMap = new Map<string, number>();
+    }
 
-	public get(param: NamedEndpointParam): T | undefined {
-		return typeof param === "number" ? this.cache.get(param) : this.cache.get(this._nameMap.get(param.toLowerCase()) ?? 0);
-	}
+    public get(param: NamedEndpointParam): T | undefined {
+        if (typeof param === "number") {
+            return this.cache.get(param);
+        }
 
-	public async fetch(param: NamedEndpointParam, cache: boolean = true): Promise<T> {
-		const _param = typeof param === "string" ? param.toLowerCase() : param;
+        const id = this.nameMap.get(param.toLowerCase());
 
-		const data = await fetch(`${BASE_URI}/${this.resource}/${_param}`).then(async (res) => res.json());
+        return id === undefined ? undefined : this.cache.get(id);
+    }
 
-		if (!this._isT(data)) {
-			throw new Error(`Invalid data received from ${BASE_URI}/${this.resource}/${_param}`);
-		}
+    public async resolve(param: NamedEndpointParam): Promise<T> {
+        return this.get(param) ?? this.fetch(param);
+    }
 
-		this._cache(data);
-		return data;
-	}
+    public async fetch(param: NamedEndpointParam, cache = true): Promise<T> {
+        return this.fetchResource(param, parseNamedBase<T>, cache);
+    }
 
-	public async resolve(param: NamedEndpointParam): Promise<T> {
-		return this.get(param) ?? this.fetch(param);
-	}
+    public async list(limit = 20, offset = 0): Promise<NamedApiResourceList<T>> {
+        return this.listResources<NamedApiResourceList<T>>(limit, offset, true);
+    }
 
-	public async list(limit: number = 20, offset: number = 0): Promise<NamedApiResourceList<T>> {
-		if (this._list) {
-			const results = this._list.results.slice(offset, limit);
-			const { count, next, previous } = this._list;
-			return { count, next, previous, results };
-		}
+    public async listAll(cache = true): Promise<NamedApiResourceList<T>> {
+        return this.listAllResources<NamedApiResourceList<T>>(cache, true);
+    }
 
-		const params = new URLSearchParams({ limit: `${limit}`, offset: `${offset}` });
-		const data = await fetch(`${BASE_URI}/${this.resource}?${params}`).then(async (res) => res.json());
-
-		if (!this._isListT(data)) {
-			throw new Error(`Invalid data received from ${BASE_URI}/${this.resource}?${params}`);
-		}
-
-		return data;
-	}
-
-	public async listAll(cache: boolean = true): Promise<NamedApiResourceList<T>> {
-		if (this._list) {
-			return this._list;
-		}
-
-		const first = await fetch(`${BASE_URI}/${this.resource}?limit=1`).then(async (res) => res.json());
-		if (!this._isListT(first)) {
-			throw new Error(`Invalid data received from ${BASE_URI}/${this.resource}?limit=1`);
-		}
-
-		const data = await fetch(`${BASE_URI}/${this.resource}?limit=${first.count}`).then(async (res) => res.json());
-		if (!this._isListT(data)) {
-			throw new Error(`Invalid data received from ${BASE_URI}/${this.resource}?limit=${first.count}`);
-		}
-
-		if (cache) {
-			this._list = data;
-		}
-
-		return data;
-	}
-
-	protected _cache(data: T) {
-		this.cache.set(data.id, data);
-		this._nameMap.set(data.name, data.id);
-	}
-
-	protected _isT(data: any): data is T {
-		return "id" in data && "name" in data;
-	}
-
-	protected _isListT(data: any): data is NamedApiResourceList<T> {
-		return Array.isArray(data) && this._isT(data[0]);
-	}
+    protected cacheResource(data: T): void {
+        super.cacheResource(data);
+        this.nameMap.set(data.name.toLowerCase(), data.id);
+    }
 }

@@ -1,6 +1,6 @@
 import type { ContestType } from "../Contests/ContestType.js";
 import type { Name } from "../Utility/CommonModels.js";
-import type { NamedApiResource } from "../Utility/NamedApiResourceList.js";
+import type { NamedApiResource } from "../Utility/ApiResourceList.js";
 import type { Berry } from "./Berry.js";
 
 export type BerryFlavor = {
